@@ -10,6 +10,23 @@
   <link href="https://cdn.lineicons.com/4.0/lineicons.css" rel="stylesheet">
   <!-- Custom CSS -->
   <link rel="stylesheet" href="assets/css/styles.css">
+
+  <style>
+
+    html, body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+#hero {
+  margin-top: 90px; /* Account for navbar */
+}
+
+#hero h1 {
+  font-size: 2.5rem;
+}
+  </style>
 </head>
 <body>
   <!-- Navbar -->
@@ -48,6 +65,18 @@
     <div class="loader-spinner"></div>
   </div>
   <main class="container-fluid p-0" style="margin-top: 90px;">
+<section id="hero" class="p-0 m-0" style="width: 100vw; height: 100vh; margin-top: 90px; overflow: hidden;">
+  <div class="text-center bg-light py-3 shadow" style="z-index: 1000; position: relative;">
+    <h1 class="fw-bold mb-0">Active Technician Activity</h1>
+  </div>
+  <iframe 
+    src="https://app.mapsly.com/map/50a6b6a8fe6b429aadf79aab3294c2ab" 
+    title="Technician Activity Map"
+    allowfullscreen 
+    loading="lazy" 
+    style="border:0; width: 100vw; height: calc(100vh - 90px - 64px); display: block;">
+  </iframe>
+</section>
 
 
 <section id="alerts" class="section-white py-5">
